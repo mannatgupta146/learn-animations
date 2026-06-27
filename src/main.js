@@ -16,9 +16,25 @@ import './style.css'
 //     delay: 0.5,
 // })
 
+// gsap.to('.box', {
+//     x: 500,
+//     duration: 1,
+//     delay: 0.6,
+//     ease: "power1",
+// })
+
+// 
+
+gsap.set('.box', {
+    x: -300,
+    y: 200,
+})
+
 gsap.to('.box', {
-    x: 500,
-    duration: 1,
+    x: 1500,
+    duration: 1.5,
     delay: 0.6,
-    ease: "steps.inOut",
+    ease: "power1.inOut",
+    repeat: -1,
+    yoyo: true,
 })
