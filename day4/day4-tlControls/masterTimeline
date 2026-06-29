@@ -1,0 +1,17 @@
+// example 
+
+// loading timeline
+
+const loadingTimeline = () => {
+    return gsap.timeline().to(Element, {})
+}
+
+// navbar timeline
+
+const navbarTimeline = () => {
+    return gsap.timeline().to(Element, {})
+}
+
+const master = gsap.timeline()
+
+master.add(loadingTimeline(), "-=0.5").add(navbarTimeline())
