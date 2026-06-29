@@ -6,6 +6,7 @@ const pause = document.querySelector(".pause")
 const reverse = document.querySelector(".reverse")
 const restart = document.querySelector(".restart")
 const seek = document.querySelector(".seek")
+const timeScale = document.querySelector(".timeScale")
 
 const tl = gsap.timeline({paused : true, })
 
