@@ -9,9 +9,11 @@ gsap.set(".image", {
     scale: 0.3
 })
 
-gsap.to(".image", {
-    scale: 1,
-    ease: "power4.out",
+gsap.set(".content", {
+    gap: "40em"
+})
+
+const tl = gsap.timeline({
     scrollTrigger: {
         trigger: ".page2",
         start: "top top",
@@ -20,3 +22,11 @@ gsap.to(".image", {
         pin: true,
     }
 })
+
+tl.to(".image", {
+    scale: 1,
+    ease: "power4.out",
+}).to(".content", {
+    gap: "2rem",
+
+}, "<")
