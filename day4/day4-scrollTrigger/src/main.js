@@ -7,10 +7,17 @@ gsap.registerPlugin(ScrollTrigger);
 
 gsap.to(".box", {
     x: 1200,
-    duration: 1.5,
     ease: "power1.inOut",
     scrollTrigger: {
         trigger: ".box",
-        start: "top 30%",
+        start: "top 50%",
+        end: "top 20%",
+        scrub: true,
+        pin: true,
+        onUpdate: () => {},
+        onEnter: () => {},
+        onLeave: () => {},
+        onEnterBack: () => {},
+        onLeaveBack: () => {}
     }
 })
