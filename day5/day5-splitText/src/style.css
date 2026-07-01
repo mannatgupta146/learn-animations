@@ -40,10 +40,14 @@ span {
     font-size: 6.3rem;
     font-weight: 500;
     text-transform: uppercase;
+    line-height: 0.8;
 }
 
 .title p{
     font-size: 1.2rem;
     width: 72%;
+}
 
+.titleWords, .titleChars {
+    overflow: hidden;
 }
