@@ -33,18 +33,18 @@ body {
 }
 
 .imageGallery img {
-    width: 60%;
-    height: 30%;
+    width: 80%;
+    height: 50%;
     object-fit: cover;
 }
 
 .imageShow {
     height: 70%;
     width: 60%;
-    background-color: cornflowerblue;
+    background-color: rgb(53, 55, 60);
 }
 
-.imageshow img {
+.imageShow img {
     height: 100%;
     width: 100%;
     object-fit: cover;
