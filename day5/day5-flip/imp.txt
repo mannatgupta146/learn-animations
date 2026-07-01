@@ -1,0 +1,4 @@
+F - first
+L - last
+I - invert
+P - play

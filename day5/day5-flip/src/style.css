@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: black;
+    color: rgb(226, 236, 239);
+    font-family: system-ui, sans-serif;
+}
+
+#app {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageGallery {
+    height: 30%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.imageGallery img {
+    width: 60%;
+    height: 30%;
+    object-fit: cover;
+}
+
+.imageShow {
+    height: 70%;
+    width: 60%;
+    background-color: cornflowerblue;
+}
+
+.imageshow img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
