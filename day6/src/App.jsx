@@ -4,15 +4,16 @@ import gsap from "gsap";
 import AnimateOnX from "./components/AnimateOnX";
 
 const App = () => {
-  const boxRef = useRef(null);
+  const boxRef = useRef([]);
   const containerRef = useRef(null);
 
   const { contextSafe } = useGSAP(() => {
-    gsap.to(boxRef.current, {
+    gsap.to([ boxRef.current ], {
       x: 500,
       duration: 1,
       delay: 0.5,
       ease: "power1.inOut",
+      stagger: 0.2
     });
   }, {
     scope: containerRef.current,
@@ -22,11 +23,13 @@ const App = () => {
 
   return (
     <div ref={containerRef}>
-      <div ref={boxRef} className="box"></div>
+      <div ref={ (e) => boxRef.current.push(e) } className="box"></div>
+      <div ref={ (e) => boxRef.current.push(e) } className="box"></div>
 
-    <AnimateOnX>
+    {/* <AnimateOnX>
       <div className="box"></div>
-    </AnimateOnX>
+    </AnimateOnX> */}
+    
       {/* <button
         onClick={contextSafe((e) => {
           gsap.fromTo(
