@@ -12,7 +12,7 @@ const AnimateOnX = ({ children }) => {
       delay: 0.5,
       ease: "power1.inOut",
     });
-  });
+  }, { scope: containerRef.current});
 
   return (
     <div ref={containerRef}>

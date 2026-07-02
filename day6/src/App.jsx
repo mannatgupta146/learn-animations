@@ -15,7 +15,7 @@ const App = () => {
       ease: "power1.inOut",
     });
   }, {
-    scope: containerRef,
+    scope: containerRef.current,
     dependencies: [],
     revertOnUpdate: true,
   });
